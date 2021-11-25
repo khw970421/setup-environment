@@ -28,3 +28,8 @@ craco.config.js 파일 추가 (alias 작성)
 > 3. putRequest
 
 - 메소드에 따라 Request 처리
+
+# 해야할 것
+
+> 1. storybook
+> 2. eslint / prettier
