@@ -1,7 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { getRequest, postRequest, putRequest } from "@api/axios";
+import axios from "axios";
 
 function App() {
+  const getFunc = async () => {
+    const get = await getRequest("posts");
+    console.log(get);
+  };
+
+  const postFunc = async () => {
+    const post = await postRequest("posts", {
+      title: "khw",
+      body: "khw970421",
+      userId: 1,
+    });
+    console.log(post);
+  };
+
+  getFunc();
+  postFunc();
+
   return (
     <div className="App">
       <header className="App-header">
